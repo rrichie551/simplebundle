@@ -1,5 +1,5 @@
 import { google } from 'googleapis';
-import credentials from './simplebundleapp.json';
+import credentials from '../../simplebundleapp.json';
 
 const SCOPES = ['https://www.googleapis.com/auth/spreadsheets'];
 
