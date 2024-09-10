@@ -1,0 +1,38 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "7a5ea8d657ad2147335ce43fada197cd"
+name = "SimpleBundle-InfiniteOptions"
+handle = "simplebundle-infiniteoptions"
+application_url = "https://http-spectrum-outline-tt.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "bundle-app-v5.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_files,read_locales,read_orders,read_publications,read_themes,write_cart_transforms,write_discounts,write_products"
+
+[auth]
+redirect_urls = [
+  "https://http-spectrum-outline-tt.trycloudflare.com/auth/callback",
+  "https://http-spectrum-outline-tt.trycloudflare.com/auth/shopify/callback",
+  "https://http-spectrum-outline-tt.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+  [[webhooks.subscriptions]]
+  topics = [
+  "app/uninstalled",
+  "orders/create",
+  "products/delete",
+  "products/update"
+]
+  uri = "/webhooks"
+
+[pos]
+embedded = false

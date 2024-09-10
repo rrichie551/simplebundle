@@ -1,0 +1,58 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgresql://tes_owner:r3X5NlubWhOq@ep-gentle-queen-a5fg6q7g.us-east-2.aws.neon.tech/tes?sslmode=require"
+}
+
+model Session {
+  id            String    @id
+  shop          String
+  state         String
+  isOnline      Boolean   @default(false)
+  scope         String?
+  expires       DateTime?
+  accessToken   String
+  userId        BigInt?
+  firstName     String?
+  lastName      String?
+  email         String?
+  accountOwner  Boolean   @default(false)
+  locale        String?
+  collaborator  Boolean?  @default(false)
+  emailVerified Boolean?  @default(false)
+  bundles       Bundle[]
+  analytics     Analytics[]
+  onboarding    Boolean   @default(false)
+}
+
+model Bundle {
+  id              Int      @id @default(autoincrement())
+  bundleName      String
+  bundleType      String
+  ProductBundleId String?
+  ProductHandle   String?
+  description     String?
+  discountType    String?
+  discountValue   String?
+  products        Json     // Changed from String to Json
+  userId          String
+  user            Session  @relation(fields: [userId], references: [id])
+  variants        Json?    // Changed from String? to Json?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime @updatedAt
+}
+
+model Analytics{
+  id                 Int      @id @default(autoincrement())
+  revenue            String
+  orders             String
+  currency           String?
+  userId             String
+  user               Session  @relation(fields: [userId], references: [id])
+}

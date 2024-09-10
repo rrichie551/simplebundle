@@ -1,0 +1,13 @@
+{
+    "type": "service_account",
+    "project_id": "simplebundleapp",
+    "private_key_id": "2ee45e49402d151a148d59177115b188bee8918b",
+    "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCtiv231XJ0RfEG\ncRmqaD8a2KlBK2NwpshNODVG9Wr59U2EUGMpL5SndU5hjle/+iVyjTCRwTpONoyq\nMMUUN4+LH2dPJFz155GMGiY6sDGjR3ut0wLf+nA9fY4aBza9EZu4o7Y8VtrBRwnm\npSP6d25kNHEQTdUSpWv3x1k8Xc/ZT+eGI7jN/hqVlAb98FWLMSfv9Yq2VV8uyGkE\nkxvrI+6lERVtbzgFBMpvUJgKG1s40FYVJXWscrR1BeptOI7HlI09z27k2E15QqXr\n6Bk1sHPSWxVL+8vv2/qiFEI4DOWhdu4lSRgnU0L/S75E75XsohMxtt/T2EAj5RS0\nHhJrTyWfAgMBAAECggEAHmg7GmnY2wyiNam9gIExhWevCE8s5kEi2XzewOchbliP\n034uUboXhtvj9u307BtNUmvwtakwqSGftfZDoc42ZX8EH/bUHvYLJ4wxZJkYqW5N\n+l/9ofcEkZGdQ2w+KBScv1ZYCOyC+diToIkQ68LfYclagivRCKpZZ5nTReN+FqpB\n9T5SMQkpicjNPDwIfiXALheEjQeMufRW2lWaVcFk7TcOMfgSf77RsT+kuJTobtW1\nqn7EPLYoN1LLv0dltU6ALesumYCQ7j35QTgrT8UJ1FVMwwQcEAGiC9vdDcCCxcQD\ncUtViUaVSQnUO3PBjjqjK05V/pv55BB1r7MeCenKyQKBgQDw9ils2CA9/1N08veR\nKT5RxzL56GpPMN0dy9kd2ITcHZPcDTWh0NLqgh5PY+opdi5FEIle29MJ3MLqKyqr\nwePIfTNo4Gl7rmg0LQqw9Hkj4PkaBvSv15aDeBSooC4C0SUEA2n+4c0qAJl2XEHC\nktLi3D+p/rrUtupxVSESyN5+/QKBgQC4X67d9Gjfh+jjb9KyAis7jheaLYjAjDgZ\nsSXKXYjf9AnHDXbcrcGGv+62PZkJ55fSi8/n65zb5eN4a4oyjQga3TRSyDD3ftsU\na1e+cazPRuYjH7uqan9tojVxBu0H544PBZA0Y7qy1KuFE68eU0XfTAvhkCNzOkZr\noge6TNAvywKBgAf8YIsW7pqfZ6islL/e2g3jyDC4Hy3YtLtUEjIHBwA0ir30Qh7G\nyPa0sUR4Tz5oiEgJsEPQjUH6awtPuu5OUrpGS/nh1h0fPpzcEUqkD4+82QSfzmQ1\nhOt+g1DDXkMBo3RqmIy19xK5Sly92gAU1aBnJEUCCDcciNCQvbPdrGIRAoGAGgua\nPkyKjBk88vQXBYJ87PrTproL+XdVbXuy5PV1on1s7CugwOfi0NBIPoJRHi8TKXEK\nu65zCDVffuFiMmXt4S2ieJdDI5NOC4JmcMbKLLXNSOTws9A7lBc4CXF7BoTVcpXM\nmzoDY8PbPv9a26PT2Ql7HDAqcdqnnAjVoqG7PyUCgYEAxcmdTFzKoND8wXsFXug3\nLNzyaFnf+pQI3DFmiLATqNUO4qsEVLfgFd2P1KbXQ2dO+cAWSenAFdhwg7HeEdJj\nLQ9EuQ93sinXzKR4WO72DBGqz3U3sgIVtmgwtv7tBx/M+JSJwYLxvD4La83TRmZA\nKG05k9QhsAVOHUqAgu+w5Lk=\n-----END PRIVATE KEY-----\n",
+    "client_email": "simplebundle@simplebundleapp.iam.gserviceaccount.com",
+    "client_id": "111228601847647954396",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/simplebundle%40simplebundleapp.iam.gserviceaccount.com",
+    "universe_domain": "googleapis.com"
+  }
