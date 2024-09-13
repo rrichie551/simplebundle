@@ -12,6 +12,7 @@ import { DELETE_PRODUCT_MUTATION } from "../api/DELETE_PRODUCT_MUTATION";
 import { handleGraphQLResponse } from "../utils/sharedUtils";
 import { submitToGoogleSheets } from "../server/google-spreadsheet.server";
 import { Spinner } from "@shopify/polaris";
+import { REGISTER } from "../api/REGISTER";
 
 export async function loader({ request }) {
   const { session } = await authenticate.admin(request);
@@ -19,6 +20,10 @@ export async function loader({ request }) {
   const sessionData = await prisma.session.findUnique({
     where: { id: session.id },
   });
+
+  const response = await admin.graphql(REGISTER);
+  const jsonResponse = await response.json(); // Await the JSON response
+  console.log(jsonResponse); // Log the actual JSON response
 
   const bundleFromDb = await prisma.bundle.findMany({
     where: {
