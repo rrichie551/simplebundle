@@ -15,7 +15,7 @@ import { Spinner } from "@shopify/polaris";
 import { REGISTER } from "../api/REGISTER";
 
 export async function loader({ request }) {
-  const { session } = await authenticate.admin(request);
+  const { session, admin } = await authenticate.admin(request);
 
   const sessionData = await prisma.session.findUnique({
     where: { id: session.id },
